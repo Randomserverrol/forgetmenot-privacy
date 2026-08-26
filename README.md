@@ -1,1 +1,569 @@
-# forgetmenot-privacy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>ForgetMeNot Privacy Policy</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #161f33;
+            --card: #1d2740;
+            --border: #2d3b57;
+
+            --primary: #6b8dff;
+            --cyan: #59dfff;
+
+            --text-primary: #f8fafc;
+            --text-secondary: #b8c2d1;
+            --text-muted: #7b8494;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(
+                    circle at top,
+                    rgba(107, 141, 255, 0.12),
+                    transparent 34rem
+                ),
+                var(--bg);
+
+            color: var(--text-primary);
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            line-height: 1.7;
+        }
+
+        .page {
+            width: min(880px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 64px 0 80px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 20px;
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 35% 30%,
+                    #b8f5ff 0%,
+                    var(--cyan) 22%,
+                    var(--primary) 60%,
+                    #2f5fe3 100%
+                );
+
+            box-shadow:
+                0 0 0 1px rgba(255, 255, 255, 0.04),
+                0 18px 60px rgba(73, 105, 255, 0.24);
+
+            position: relative;
+        }
+
+        .logo::after {
+            content: "";
+
+            position: absolute;
+
+            width: 14px;
+            height: 14px;
+
+            top: 10px;
+            right: 8px;
+
+            border-radius: 50%;
+
+            background: var(--cyan);
+
+            box-shadow:
+                0 0 16px rgba(89, 223, 255, 0.8);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3rem);
+            letter-spacing: -0.04em;
+        }
+
+        .subtitle {
+            margin: 10px auto 0;
+            max-width: 620px;
+
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .updated {
+            margin-top: 14px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .card {
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.025),
+                    rgba(255, 255, 255, 0.01)
+                ),
+                var(--surface);
+
+            border: 1px solid var(--border);
+            border-radius: 22px;
+
+            padding: 28px;
+            margin: 18px 0;
+
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+
+            color: var(--text-primary);
+
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin: 10px 0;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 22px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .notice {
+            border-left: 3px solid var(--primary);
+
+            background:
+                rgba(107, 141, 255, 0.08);
+
+            padding: 16px 18px;
+            border-radius: 12px;
+
+            color: var(--text-secondary);
+
+            margin-top: 16px;
+        }
+
+        footer {
+            margin-top: 42px;
+            text-align: center;
+
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                width: min(100% - 22px, 880px);
+                padding-top: 38px;
+            }
+
+            .card {
+                padding: 21px;
+                border-radius: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+
+        <header class="hero">
+            <div
+                class="logo"
+                aria-hidden="true"
+            ></div>
+
+            <h1>ForgetMeNot</h1>
+
+            <p class="subtitle">
+                Privacy Policy
+            </p>
+
+            <p class="updated">
+                Effective date: August 2026
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>Overview</h2>
+
+            <p>
+                ForgetMeNot is developed and provided by
+                <strong>ForgetMeNot Studio</strong>.
+            </p>
+
+            <p>
+                This Privacy Policy explains how ForgetMeNot
+                accesses and handles information when you use
+                the application.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>1. Information ForgetMeNot accesses</h2>
+
+            <p>
+                ForgetMeNot may access information about the
+                Bluetooth device that you choose to protect,
+                including:
+            </p>
+
+            <ul>
+                <li>Bluetooth device name</li>
+                <li>Bluetooth device address</li>
+                <li>Bluetooth connection status</li>
+            </ul>
+
+            <p>
+                This information is used only to provide the
+                app's Bluetooth protection and disconnect-alert
+                functionality.
+            </p>
+
+            <p>
+                ForgetMeNot may also store:
+            </p>
+
+            <ul>
+                <li>Your selected protected device</li>
+                <li>Whether Protection is enabled</li>
+                <li>Your selected alert delay</li>
+                <li>Your selected alert sound preference</li>
+                <li>Recent protection activity and alert history</li>
+                <li>Onboarding and application preference settings</li>
+            </ul>
+
+            <p>
+                This information is stored locally on your device.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>2. Data collection and sharing</h2>
+
+            <p>
+                ForgetMeNot does not operate its own backend
+                servers and does not transmit the information
+                described above to ForgetMeNot Studio.
+            </p>
+
+            <p>
+                The current version of ForgetMeNot does not:
+            </p>
+
+            <ul>
+                <li>Sell personal information</li>
+                <li>Share personal information with advertisers</li>
+                <li>Use advertising SDKs</li>
+                <li>Use analytics or behavioral tracking SDKs</li>
+                <li>Require a user account</li>
+                <li>Collect precise or approximate location</li>
+                <li>Upload Bluetooth device information to the developer</li>
+            </ul>
+
+            <div class="notice">
+                Information processed locally on your device is
+                used only to provide the application's functionality.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>3. Bluetooth access</h2>
+
+            <p>
+                ForgetMeNot requests Bluetooth permission so that
+                it can identify the Bluetooth device selected by
+                the user and monitor that device's connection state.
+            </p>
+
+            <p>
+                Bluetooth access is required for the core
+                Protection feature.
+            </p>
+
+            <p>
+                ForgetMeNot does not use Bluetooth information for
+                advertising, profiling, or tracking users across
+                apps or services.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>4. Notifications and foreground protection</h2>
+
+            <p>
+                ForgetMeNot may request permission to send
+                notifications.
+            </p>
+
+            <p>
+                Notifications are used to:
+            </p>
+
+            <ul>
+                <li>Show that Protection is currently active</li>
+                <li>Display the connection status of the protected device</li>
+                <li>
+                    Warn you when the protected device remains
+                    disconnected beyond your selected alert delay
+                </li>
+            </ul>
+
+            <p>
+                While Protection is enabled, ForgetMeNot uses an
+                Android connected-device foreground service so
+                that Bluetooth protection can continue while the
+                application is in the background.
+            </p>
+
+            <p>
+                An ongoing system notification is displayed while
+                this service is active.
+            </p>
+
+            <p>
+                You can stop Protection at any time from within the
+                application or from the ongoing notification.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>5. Device restart</h2>
+
+            <p>
+                If you previously enabled Protection, ForgetMeNot
+                may restore that protection after your Android
+                device restarts or after the application is updated.
+            </p>
+
+            <p>
+                ForgetMeNot checks whether Protection was previously
+                enabled before restoring monitoring.
+            </p>
+
+            <p>
+                If Protection was not enabled, the background
+                protection service is not automatically started.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>6. Local storage and backups</h2>
+
+            <p>
+                ForgetMeNot stores application preferences and
+                protection information in private application
+                storage on your Android device.
+            </p>
+
+            <p>
+                ForgetMeNot is configured not to include its
+                private application data in Android cloud backup
+                or automatic device-to-device backup.
+            </p>
+
+            <p>
+                Uninstalling the application normally removes
+                locally stored ForgetMeNot application data from
+                the device.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>7. Protection history and deletion</h2>
+
+            <p>
+                ForgetMeNot stores a limited history of recent
+                protection events locally on your device.
+            </p>
+
+            <p>
+                Because ForgetMeNot does not maintain user accounts
+                or developer-controlled cloud storage, there is no
+                remote account or server-side profile to delete.
+            </p>
+
+            <p>
+                You can remove locally stored application data by:
+            </p>
+
+            <ul>
+                <li>
+                    Using any available history-clearing option
+                    within the application, where applicable
+                </li>
+
+                <li>
+                    Clearing ForgetMeNot's storage through Android
+                    system settings
+                </li>
+
+                <li>Uninstalling ForgetMeNot</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>8. Third-party software</h2>
+
+            <p>
+                ForgetMeNot uses Android and AndroidX libraries as
+                well as Google Play services components required
+                for application functionality and open-source
+                license notices.
+            </p>
+
+            <p>
+                The Google Play services OSS Licenses SDK used by
+                ForgetMeNot does not collect end-user data.
+            </p>
+
+            <p>
+                Open-source license information can be viewed
+                from within the application.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>9. Security</h2>
+
+            <p>
+                ForgetMeNot is designed to minimize data handling
+                by processing protected-device information locally
+                on the user's device.
+            </p>
+
+            <p>
+                No internet-based ForgetMeNot account or
+                developer-operated server is used to store
+                protected-device information in the current
+                version of the application.
+            </p>
+
+            <p>
+                No method of electronic storage is completely
+                risk-free, but ForgetMeNot limits exposure by
+                avoiding unnecessary transmission of user information.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>10. Children's privacy</h2>
+
+            <p>
+                ForgetMeNot is not designed to intentionally collect
+                personal information from children.
+            </p>
+
+            <p>
+                The application does not require an account and
+                does not operate a developer-controlled service
+                for collecting user information.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>11. Changes to this Privacy Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated when
+                ForgetMeNot's features or data practices change.
+            </p>
+
+            <p>
+                For example, if a future version introduces
+                advertising, analytics, cloud services, accounts,
+                or other functionality that changes how user
+                information is handled, this Privacy Policy and
+                the application's Google Play Data Safety
+                disclosures will be updated before or when those
+                changes are released.
+            </p>
+
+            <p>
+                The effective date at the top of this Privacy Policy
+                will indicate when it was last updated.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>12. Contact</h2>
+
+            <p>
+                For privacy questions or concerns about ForgetMeNot,
+                contact:
+            </p>
+
+            <p>
+                <strong>ForgetMeNot Studio</strong><br />
+
+                <a href="mailto:forgetmenotapp.support@gmail.com">
+                    forgetmenotapp.support@gmail.com
+                </a>
+            </p>
+        </section>
+
+        <footer>
+            © 2026 ForgetMeNot Studio
+        </footer>
+
+    </main>
+</body>
+</html>
